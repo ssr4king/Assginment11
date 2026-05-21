@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Student - Student Management System</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+   
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+        <div class="container">
+            <a class="navbar-brand navbar-brand-custom" href="/students">
+                <i class="bi bi-mortarboard-fill"></i> Student Management System
+            </a>
+        </div>
+    </nav>
+
+    
+    <div class="main-wrapper">
+        <div class="card-box-centered">
+      
+            <div class="main-title-centered">
+                <h1 class="main-title mb-1">Add Student</h1>
+                <p class="text-muted text-center mt-2 mb-4">Enter the details below to register a new student record.</p>
+            </div>
+
+            <form action="/students/add" method="POST" class="needs-validation" novalidate>
+           
+                <div class="form-group-custom">
+                    <label for="name" class="form-label-custom">Full Name</label>
+                    <input type="text" id="name" name="name" class="form-control form-control-custom" placeholder="name" required>
+                </div>
+
+             
+                <div class="form-group-custom">
+                    <label for="rollno" class="form-label-custom">Roll Number</label>
+                    <input type="number" id="rollno" name="rollno" class="form-control form-control-custom" placeholder="rollno" required>
+                </div>
+
+          
+                <div class="form-group-custom">
+                    <label for="course" class="form-label-custom">Course</label>
+                    <input type="text" id="course" name="course" class="form-control form-control-custom" placeholder="cousre" required>
+                </div>
+
+                <div class="row">
+               
+                    <div class="col-md-6">
+                        <div class="form-group-custom">
+                            <label for="age" class="form-label-custom">Age</label>
+                            <input type="number" id="age" name="age" class="form-control form-control-custom" placeholder="age" required>
+                        </div>
+                    </div>
+                
+                    <div class="col-md-6">
+                        <div class="form-group-custom">
+                            <label for="city" class="form-label-custom">City</label>
+                            <input type="text" id="city" name="city" class="form-control form-control-custom" placeholder="city" required>
+                        </div>
+                    </div>
+                </div>
+
+         
+                <div class="form-group-custom">
+                    <label for="email" class="form-label-custom">Email Address</label>
+                    <input type="email" id="email" name="email" class="form-control form-control-custom" placeholder="mail" required>
+                </div>
+
+               
+                <div class="d-flex align-items-center justify-content-between mt-4">
+                    <a href="/students" class="btn btn-outline-red">
+                        <i class="bi bi-arrow-left-short fs-5"></i> Cancel
+                    </a>
+                    <button type="submit" class="btn btn-red">
+                        <i class="bi bi-check-circle-fill"></i> Save Student
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
